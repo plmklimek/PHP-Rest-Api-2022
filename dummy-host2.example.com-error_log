@@ -53,3 +53,4 @@
 [Sun Jan 23 23:43:51.244770 2022] [php:notice] [pid 12921] [client 127.0.0.1:49886] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9000 (through xdebug.client_host/xdebug.client_port) :-(
 [Sun Jan 23 23:44:47.369371 2022] [php:notice] [pid 14333] [client 127.0.0.1:49888] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9000 (through xdebug.client_host/xdebug.client_port) :-(
 [Sun Jan 23 23:48:58.700513 2022] [php:notice] [pid 12922] [client 127.0.0.1:49890] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9000 (through xdebug.client_host/xdebug.client_port) :-(
+[Sun Jan 23 23:53:00.514877 2022] [php:notice] [pid 12923] [client 127.0.0.1:49892] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9000 (through xdebug.client_host/xdebug.client_port) :-(

@@ -18,3 +18,10 @@ function createEmployeers($name, $surname, $age)
     $statement = $mysqlController->prepare($sql);
     die(json_encode($statement->execute([$name, $surname, $age])));
 }
+function updateEmployeers($id, $name, $surname, $age)
+{
+    $mysqlController = MysqlController::getController();
+    $sql = "UPDATE employeers SET name = ?, surname = ?, age = ? WHERE id = ? ";
+    $statement = $mysqlController->prepare($sql);
+    die(json_encode($statement->execute([$name, $surname, $age, $id])));
+}
