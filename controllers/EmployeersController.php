@@ -25,3 +25,10 @@ function updateEmployeers($id, $name, $surname, $age)
     $statement = $mysqlController->prepare($sql);
     die(json_encode($statement->execute([$name, $surname, $age, $id])));
 }
+function removeEmployeers($id)
+{
+    $mysqlController = MysqlController::getController();
+    $sql = "DELETE FROM employeers WHERE id = ?";
+    $statement = $mysqlController->prepare($sql);
+    die(json_encode($statement->execute([intval($id)])));
+}

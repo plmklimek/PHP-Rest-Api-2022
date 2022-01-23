@@ -32,3 +32,13 @@
 127.0.0.1 - - [23/Jan/2022:23:44:47 +0100] "GET /?action=employeers HTTP/1.1" 200 108
 127.0.0.1 - - [23/Jan/2022:23:48:58 +0100] "POST /?action=employeers&name=Adam&surname=Pawel&age=40 HTTP/1.1" 200 4
 127.0.0.1 - - [23/Jan/2022:23:53:00 +0100] "PUT /?action=employeers&name=Adam&surname=Pawel&age=41&id=3 HTTP/1.1" 200 4
+127.0.0.1 - - [23/Jan/2022:23:54:26 +0100] "DELETE /?action=employeers&id=3 HTTP/1.1" 500 -
+127.0.0.1 - - [23/Jan/2022:23:54:35 +0100] "DELETE /?action=employeers&id=3 HTTP/1.1" 500 -
+127.0.0.1 - - [23/Jan/2022:23:54:48 +0100] "DELETE /?action=employeers&id=3 HTTP/1.1" 500 -
+127.0.0.1 - - [23/Jan/2022:23:55:23 +0100] "DELETE /?action=employeers&id=3 HTTP/1.1" 500 -
+127.0.0.1 - - [23/Jan/2022:23:55:24 +0100] "DELETE /?action=employeers&id=3 HTTP/1.1" 500 -
+127.0.0.1 - - [23/Jan/2022:23:55:49 +0100] "DELETE /?action=employeers&id=3 HTTP/1.1" 500 -
+127.0.0.1 - - [23/Jan/2022:23:56:10 +0100] "DELETE /?action=employeers&id=3 HTTP/1.1" 500 -
+127.0.0.1 - - [23/Jan/2022:23:57:06 +0100] "DELETE /?action=employeers&id=3 HTTP/1.1" 500 -
+127.0.0.1 - - [23/Jan/2022:23:59:19 +0100] "DELETE /?action=employeers&id=3 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Jan/2022:23:59:23 +0100] "DELETE /?action=employeers&id=3 HTTP/1.1" 200 4

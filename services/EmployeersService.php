@@ -9,7 +9,8 @@ function init($val)
     } else if ($val == "PUT") {
         updateEmployeers($_GET["id"], $_GET["name"], $_GET["surname"], $_GET["age"]);
     } else if ($val == "DELETE") {
+        removeEmployeers($_GET["id"]);
     } else {
-        return "ERROR";
+        die("ERROR");
     }
 }
