@@ -1,6 +1,6 @@
 <?php
 $address = "localhost";
-$test = "Test";
+$test = "Test2";
 $DB = "employeers";
 $user = "root";
 $passwd = "password";
