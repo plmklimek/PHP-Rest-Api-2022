@@ -1,5 +1,6 @@
 <?php
 require("controllers/MysqlController.php");
+require("modals/EmployeersModal.php");
 function getEmployeers()
 {
     $mysqlController = MysqlController::getController();
@@ -7,7 +8,8 @@ function getEmployeers()
     $statement = $mysqlController->query($sql);
     $result = [];
     while ($row = $statement->fetch()) {
-        array_push($result, ["id" => $row["id"], "name" => $row["name"], "surname" => $row["surname"], "age" => $row["age"]]);
+        $employeers = new Employeers($row["id"], $row["name"], $row["surname"], $row["age"]);
+        array_push($result, $employeers->getEmployeer());
     }
     die(json_encode($result));
 }
@@ -30,5 +32,9 @@ function removeEmployeers($id)
     $mysqlController = MysqlController::getController();
     $sql = "DELETE FROM employeers WHERE id = ?";
     $statement = $mysqlController->prepare($sql);
-    die(json_encode($statement->execute([intval($id)])));
+    if ($statement->execute([intval($id)]) == true) {
+        die(["status" => "Usunieto"]);
+    } else {
+        die(["error" => "error"]);
+    }
 }

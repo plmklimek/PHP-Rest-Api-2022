@@ -14,6 +14,6 @@ class Employeers
     }
     function getEmployeer()
     {
-        return [$this->id, $this->name, $this->surname, $this->age];
+        return ["id" => $this->id, "name" => $this->name, "surname" => $this->surname, "age" => $this->age];
     }
 }
