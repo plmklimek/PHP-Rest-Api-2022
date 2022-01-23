@@ -1,0 +1,6 @@
+[Sun Jan 23 11:46:48.024577 2022] [php:notice] [pid 11098] [client 127.0.0.1:49818] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9000 (through xdebug.client_host/xdebug.client_port) :-(
+[Sun Jan 23 11:46:48.245863 2022] [php:notice] [pid 11098] [client 127.0.0.1:49818] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9000 (through xdebug.client_host/xdebug.client_port) :-(, referer: http://employeers/
+[Sun Jan 23 11:49:38.251149 2022] [php:notice] [pid 11101] [client 127.0.0.1:49824] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9000 (through xdebug.client_host/xdebug.client_port) :-(
+[Sun Jan 23 11:49:38.251266 2022] [php:warn] [pid 11101] [client 127.0.0.1:49824] PHP Warning:  Undefined array key "action" in /opt/lampp/htdocs/employeers/index.php on line 2
+[Sun Jan 23 11:49:38.379281 2022] [php:notice] [pid 11101] [client 127.0.0.1:49824] Xdebug: [Step Debug] Could not connect to debugging client. Tried: localhost:9000 (through xdebug.client_host/xdebug.client_port) :-(, referer: http://employeers/
+[Sun Jan 23 11:49:38.379337 2022] [php:warn] [pid 11101] [client 127.0.0.1:49824] PHP Warning:  Undefined array key "action" in /opt/lampp/htdocs/employeers/index.php on line 2, referer: http://employeers/
