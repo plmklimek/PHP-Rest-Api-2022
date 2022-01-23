@@ -30,3 +30,4 @@
 127.0.0.1 - - [23/Jan/2022:23:43:50 +0100] "GET /?action=employeers HTTP/1.1" 200 187
 127.0.0.1 - - [23/Jan/2022:23:43:51 +0100] "GET /?action=employeers HTTP/1.1" 200 187
 127.0.0.1 - - [23/Jan/2022:23:44:47 +0100] "GET /?action=employeers HTTP/1.1" 200 108
+127.0.0.1 - - [23/Jan/2022:23:48:58 +0100] "POST /?action=employeers&name=Adam&surname=Pawel&age=40 HTTP/1.1" 200 4

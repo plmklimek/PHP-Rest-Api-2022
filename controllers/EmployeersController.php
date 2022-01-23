@@ -11,3 +11,10 @@ function getEmployeers()
     }
     die(json_encode($result));
 }
+function createEmployeers($name, $surname, $age)
+{
+    $mysqlController = MysqlController::getController();
+    $sql = "INSERT INTO employeers VALUES (NULL,?,?,?)";
+    $statement = $mysqlController->prepare($sql);
+    die(json_encode($statement->execute([$name, $surname, $age])));
+}
