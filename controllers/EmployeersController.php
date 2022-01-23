@@ -18,14 +18,22 @@ function createEmployeers($name, $surname, $age)
     $mysqlController = MysqlController::getController();
     $sql = "INSERT INTO employeers VALUES (NULL,?,?,?)";
     $statement = $mysqlController->prepare($sql);
-    die(json_encode($statement->execute([$name, $surname, $age])));
+    if ($statement->execute([$name, $surname, $age]) == true) {
+        die(["status" => "Dodano"]);
+    } else {
+        die(["error" => "error"]);
+    }
 }
 function updateEmployeers($id, $name, $surname, $age)
 {
     $mysqlController = MysqlController::getController();
     $sql = "UPDATE employeers SET name = ?, surname = ?, age = ? WHERE id = ? ";
     $statement = $mysqlController->prepare($sql);
-    die(json_encode($statement->execute([$name, $surname, $age, $id])));
+    if ($statement->execute([$name, $surname, $age, $id]) == true) {
+        die(["status" => "Edytowano"]);
+    } else {
+        die(["error" => "error"]);
+    }
 }
 function removeEmployeers($id)
 {
